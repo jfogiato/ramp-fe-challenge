@@ -37,7 +37,7 @@ Or
 #### Run the server locally
 
 - Run `yarn install` or `npm install`
-- Run `yarn start`
+- Run `yarn start` or `npm start`
 - The server will be available in `http://localhost:3000`
 
 ### Special considerations
