@@ -71,7 +71,7 @@ export function InputSelect<TItem>({
                 "RampInputSelect--dropdown-container-opened": isOpen,
               })}
               {...getMenuProps()}
-              style={{ top: dropdownPosition.top, left: dropdownPosition.left }}
+              style={{ top: dropdownPosition.top, left: dropdownPosition.left, position: "absolute" }}
             >
               {renderItems()}
             </div>
@@ -122,7 +122,7 @@ const getDropdownPosition: GetDropdownPositionFn = (target) => {
     const { top, left } = target.getBoundingClientRect()
     const { scrollY } = window
     return {
-      top: scrollY + top + 63,
+      top: scrollY + top + 44,
       left,
     }
   }
