@@ -28,7 +28,6 @@ export const TransactionPane: TransactionPaneComponent = ({
             newValue,
           })
           
-          console.log('onChange in TransactionPane working')
           setApproved(newValue)
         }}
       />

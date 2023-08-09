@@ -12,6 +12,18 @@ export const InputCheckbox: InputCheckboxComponent = ({ id, checked = false, dis
           "RampInputCheckbox--label-checked": checked,
           "RampInputCheckbox--label-disabled": disabled,
         })}
+        onClick={() => {
+          console.log('label checkbox onClick working')
+          onChange(!checked)
+        }}
+        onChange={() => {
+          console.log('label checkbox onChange working')
+          onChange(!checked)
+        }}
+        // Note: I hate this solution and it feels very hacky. I can't quite figure out the label/
+        // input relationship here. I'm sure it's something simple I'm missing. I've tried zIndex
+        // and a few other fixes without any luck. I'm going to leave this for now and acknowledge
+        // that it's not ideal.
       />
       <input
         id={inputId}
@@ -19,11 +31,7 @@ export const InputCheckbox: InputCheckboxComponent = ({ id, checked = false, dis
         className="RampInputCheckbox--input"
         checked={checked}
         disabled={disabled}
-        onClick={() => {
-          console.log('checkbox onClick working')
-        }}
         onChange={() => {
-          console.log('checkbox onChange working')
           onChange(!checked)
         }}
       />
