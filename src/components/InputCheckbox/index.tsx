@@ -13,11 +13,6 @@ export const InputCheckbox: InputCheckboxComponent = ({ id, checked = false, dis
           "RampInputCheckbox--label-disabled": disabled,
         })}
         onClick={() => {
-          console.log('label checkbox onClick working')
-          onChange(!checked)
-        }}
-        onChange={() => {
-          console.log('label checkbox onChange working')
           onChange(!checked)
         }}
         // Note: I hate this solution and it feels very hacky. I can't quite figure out the label/
