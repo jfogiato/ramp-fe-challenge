@@ -22,7 +22,7 @@ export function usePaginatedTransactions(): PaginatedTransactionsResult {
         return response
       }
 
-      const allPaginatedTransactions = [...paginatedTransactions!.data, ...response.data]
+      const allPaginatedTransactions = [...previousResponse!.data, ...response.data]
 
       return { data: allPaginatedTransactions , nextPage: response.nextPage }
     })
