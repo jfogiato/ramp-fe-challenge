@@ -170,7 +170,10 @@ _This bug has 2 wrong behaviors that can be fixed with the same solution. It's a
 
 **Actual:** When you reach the end of the data, the **View More** button is still showing and you are still able to click the button. If you click it, the page crashes.
 
-# Bug 7: Approving a transaction won't persist the new value
+# Bug 7: Approving a transaction won't persist the new value ❌
+
+_Note:_ I couldn't solve this bug & ran out of time to work on it - I wanted to submit any way due to timing. I'm going to continue to dig into it and will push a change and reach out if/when I solve it! 
+
 
 _You need to fix some of the previous bugs in order to reproduce_
 
